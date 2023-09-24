@@ -35,13 +35,16 @@ function routeRender(routes) {
       acc[key] = value
       return acc
   }, {})
-  
+
   history.replaceState(query, '')
   
   // 현재 루트
   const currentRoute = routes.find(route => new RegExp(`${route.path}/?$`).test(hash))
   routerView.innerHTML = ''
   routerView.append(new currentRoute.component().el)
+
+  // 화면 전환되면 스크롤 위치 최상단으로
+  window.scrollTo(0, 0)
 }
 
 export function createRouter(routes) {
