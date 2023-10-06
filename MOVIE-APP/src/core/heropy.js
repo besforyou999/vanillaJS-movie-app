@@ -17,8 +17,6 @@ export class Component {
   }
 }
 
-
-
 // Router //
 // 페이지 렌더링!
 function routeRender(routes) {
