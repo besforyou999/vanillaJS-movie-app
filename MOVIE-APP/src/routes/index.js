@@ -7,3 +7,4 @@ export default createRouter([
   { path: '#/', component: Home },
   { path: '#/movie', component: Movie}
 ])
+
