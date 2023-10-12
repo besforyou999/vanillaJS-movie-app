@@ -5,12 +5,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel ./index.html",
-    "build": "parcel build ./index.html"
+    "build": "parcel build ./index.html",
+    "vercel": "vercel dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.9.3"
+    "parcel": "^2.9.3",
+    "vercel": "^32.4.1"
   }
 }
